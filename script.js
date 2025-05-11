@@ -688,7 +688,7 @@ enhanced sensitivity on an InGaAsP Platform.</p>
                             <tr>
                                 <td class="projectimg">
                                     <div class="projectimgcontainer">
-                                        <img class="image" src="Images/portfolio/DFB.png">
+                                        <img class="image" src="images/DFB.png">
                                     </div>
                                 </td>
                             </tr>
@@ -719,7 +719,7 @@ enhanced sensitivity on an InGaAsP Platform.</p>
                             <tr>
                                 <td class="projectimg">
                                     <div class="projectimgcontainer">
-                                        <img class="image" src="Images/portfolio/QKD.png">
+                                        <img class="image" src="images/QKD.png">
                                     </div>
                                 </td>
                             </tr>
@@ -855,7 +855,7 @@ of an MFRC522RFID reader.
                             <tr>
                                 <td class="projectimg">
                                     <div class="projectimgcontainer">
-                                        <img class="image" src="Images/portfolio/vanillacall.png">
+                                        <img class="image" src="images/vanillacall.png">
                                     </div>
                                 </td>
                             </tr>
