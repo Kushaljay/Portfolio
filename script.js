@@ -601,7 +601,6 @@ window.requestAnimationFrame = window.requestAnimationFrame || window.webkitRequ
 Fluid.initialize();
 
 
-
 $(document).ready(function () {
     // Add smooth scrolling to all links
     $("a").on('click', function (event) {
@@ -644,9 +643,22 @@ const data = {
 enhanced sensitivity on an InGaAsP Platform.</p>
                                 </div>
                             
-                                <div class="descripton">
+        
+                            </td>
+                            <td>
+                                <td class="projectimg" rowspan="2">
+                                    <div class="projectimgcontainer">
+                                        <img class="image" src="Images/portfolio/DFBclose.png">
+                                    </div>
+                                </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <div class="descripton">
                                     <div class="toolsbox">
                                         <ul>
+                                            <li>PIC Design</li>
                                             <li>FDTD Simulation</li>
                                             <li>FDE Simulation</li>
                                             <li>Lumerical Internconnect</li>
@@ -670,28 +682,29 @@ enhanced sensitivity on an InGaAsP Platform.</p>
                                 <div class="descripton">
                                     <p>Implemented temperature tunablilty to DFB laser setup with python-based PID contol algorithms. Wrote automation scripts for the data collection and anaylsis processes.</p>
                                 </div>
-                            
-                                <div class="descripton">
+                            </td>
+                            <td>
+                                <td class="projectimg" rowspan="2">
+                                    <div class="projectimgcontainer">
+                                        <img class="image" src="Images/portfolio/DFB.png">
+                                    </div>
+                                </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <div class="descripton">
                                     <div class="toolsbox">
                                         <ul>
                                             <li>Fibre Optics</li>
                                             <li>Optical Characterisation</li>
                                             <li>Python</li>
-                                            <li>C++</li>
-                                            <li>Lab Equipment</li>
-                                            <li>Microcontrollers</li>
-                                            
+                                            <li>Oscilloscope</li>
+                                            <li>OSA</li>
                                         </ul>
                                     </div>
                                 </div>
                             </td>
-                            <tr>
-                                <td class="projectimg">
-                                    <div class="projectimgcontainer">
-                                        <img class="image" src="images/DFB.png">
-                                    </div>
-                                </td>
-                            </tr>
                         </tr>
                     </table>
                 </div>
@@ -699,12 +712,22 @@ enhanced sensitivity on an InGaAsP Platform.</p>
                     <table class="projecttable">
                         <tr class="projectrow">
                             <td class="projecttxt">
-                                <p class="ptitle">CV-QKD.</p>
+                                <p class="ptitle">Integrated CV-QKD.</p>
                                 <div class="descripton">
                                     <p>Performed the optical characterisation of a continous variable-quantum key distribution transmitter & reciever.</p>
                                 </div>
-                            
-                                <div class="descripton">
+                            </td>
+                            <td>
+                                <td class="projectimg" rowspan="2">
+                                    <div class="projectimgcontainer">
+                                        <img class="image" src="Images/portfolio/QKD.png">
+                                    </div>
+                                </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <div class="descripton">
                                     <div class="toolsbox">
                                         <ul>
                                             <li>Optical Characterisation</li>
@@ -716,19 +739,7 @@ enhanced sensitivity on an InGaAsP Platform.</p>
                                     </div>
                                 </div>
                             </td>
-                            <tr>
-                                <td class="projectimg">
-                                    <div class="projectimgcontainer">
-                                        <img class="image" src="images/QKD.png">
-                                    </div>
-                                </td>
-                            </tr>
                         </tr>
-                    </table>
-                </div>
-                <div class="p">
-                    <table class="projecttable">
-                        <div class="placeholder">type</div>
                     </table>
                 </div>
             </div>
@@ -819,12 +830,7 @@ of an MFRC522RFID reader.
                         </tr>
                     </table>
                 </div>
-                <div class="p">
-                    <table class="projecttable">
-                        <div class="placeholder">type</div>
-                    </table>
                 </div>
-            </div>
         </div>
     `,
     fin: `
@@ -841,8 +847,18 @@ of an MFRC522RFID reader.
                                 <div class="descripton">
                                     <p>Using the standard Black-Shoals differential equation to accuratley price vanilla call and put options.</p>
                                 </div>
-                            
-                                <div class="descripton">
+                            </td>
+                            <td>
+                                <td class="projectimg" rowspan="2">
+                                    <div class="projectimgcontainer">
+                                        <img class="image" src="Images/portfolio/vanillacall.png">
+                                    </div>
+                                </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <div class="descripton">
                                     <div class="toolsbox">
                                         <ul>
                                             <li>Python</li>
@@ -852,13 +868,6 @@ of an MFRC522RFID reader.
                                     </div>
                                 </div>
                             </td>
-                            <tr>
-                                <td class="projectimg">
-                                    <div class="projectimgcontainer">
-                                        <img class="image" src="images/vanillacall.png">
-                                    </div>
-                                </td>
-                            </tr>
                         </tr>
                     </table>
                 </div>
