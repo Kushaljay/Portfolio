@@ -29,10 +29,11 @@ header {
     padding-top: 3rem;
 }
 
-.nav{
-    margin:auto;
-    padding-top:1rem;
+.nav {
+    margin: auto;
+    padding-top: 1rem;
 }
+
 .navbar {
     z-index: 1;
     position: relative;
@@ -59,10 +60,17 @@ header {
     font-size: 1rem;
 }
 
+@media screen and (max-width: 600px) {
+    .nava {
+        font-size: 0.9rem;
+    }
+}
+
 .nava:hover {
     color: #c1c1c1;
 
 }
+
 .logoa {
     font-weight: 600;
     font-style: normal;
@@ -70,9 +78,11 @@ header {
     color: white;
     transition: 0.3s;
 }
+
 .logoa:hover {
     color: rgb(201, 201, 201);
 }
+
 .CV {
     text-decoration: none;
     color: black;
@@ -82,6 +92,12 @@ header {
     transition: 0.3s;
     font-weight: 400;
     font-size: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .CV {
+        font-size: 0.9rem;
+    }
 }
 
 .CV:hover {
@@ -138,12 +154,22 @@ header {
 
 }
 
+@media screen and (max-width: 600px) {
+    .words {
+        font-size: 4rem;
+    }
+
+    .wordsdiff {
+        font-size: 4rem;
+    }
+}
+
 .wordsmall {
 
     z-index: 1;
     position: relative;
     font-size: 1.3rem;
-    font-weight:600;
+    font-weight: 600;
     color: rgb(255, 255, 255);
     padding: 0.5rem;
 }
@@ -170,7 +196,7 @@ header {
 
 .biocontainermain {
     background-color: rgb(19, 23, 30);
-    margin-top:4rem;
+    margin-top: 4rem;
     margin-left: 5%;
     margin-right: 5%;
     padding: 2rem 0 2rem 2rem;
@@ -207,6 +233,7 @@ header {
         display: none;
     }
 }
+
 @media only screen and (max-width: 950px) {
     #hideport {
         display: none;
@@ -232,7 +259,7 @@ canvas {
 
 
 .porttitle {
-    margin:auto;
+    margin: auto;
     padding-top: 6rem;
     padding-bottom: 3rem;
     width: fit-content;
@@ -253,9 +280,16 @@ canvas {
         font-size: 4.5rem;
     }
 }
+
 @media screen and (max-width: 600px) {
     .porttitle p {
         font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .porttitle p {
+        font-size: 3rem;
     }
 }
 
@@ -269,7 +303,7 @@ canvas {
     align-items: center;
     flex-direction: column;
     font-family: sans-serif;
-    
+
 
     .p {
         background-color: rgb(14, 14, 14);
@@ -344,11 +378,13 @@ canvas {
     display: flex;
     padding: 3rem 8rem 0 8rem;
 }
+
 @media screen and (max-width: 900px) {
     .container {
         padding: 3rem 2rem 0 2rem;
     }
 }
+
 .left {
     transition: opacity 0.5s ease;
     opacity: 1;
@@ -385,11 +421,19 @@ canvas {
     transition: 0.3s;
     border-style: none;
 }
+
 @media only screen and (max-width: 600px) {
     .tab-button {
         font-size: 1.2rem;
     }
 }
+
+@media only screen and (max-width: 500px) {
+    .tab-button {
+        font-size: 1rem;
+    }
+}
+
 .tab-button:hover {
     color: rgb(203, 203, 203);
 }
@@ -454,7 +498,6 @@ canvas {
 }
 
 .footer {
-    padding:1rem;
     width: 100%;
     background-color: black;
     font-family: "Geist", sans-serif;
@@ -464,27 +507,28 @@ canvas {
 }
 
 .footertable {
-    padding:1rem;
+    padding: 1rem;
     border: none;
 }
 
 .footertable li {
     list-style: none;
     color: white;
-    font-weight: 200;
-    padding-bottom:0.5rem;
     padding-right:1rem;
+    padding-bottom:0.5rem;
+    font-weight:100;
 }
-
 .footerregtxt {
     color: rgb(185, 185, 185);
     font-weight: 100;
+    font-size: 1rem;
 
 }
 
 .footertable a {
     color: rgb(185, 185, 185);
     font-weight: 100;
+    font-size: 1rem;
 }
 
 .footertable a:hover {
@@ -492,9 +536,19 @@ canvas {
     transition: 0.2s;
 }
 
-.footertitle {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+@media only screen and (max-width: 500px) {
+    .footertable li {
+        
+        font-size:0.9rem;
+    }
+    .footertable a {
+        font-size: 0.8rem;
+    }
+    .footerregtxt {
+    font-size: 0.9rem;
+
+}
+    
 }
 
 .css-pixel-symbol {
@@ -506,21 +560,21 @@ canvas {
 
 
 .css-pixel-symbol {
-	display: inline-block;
-	width: 1em;
-	height: 1em;
-	text-align:left;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    text-align: left;
 }
 
 .css-pixel-symbol.css-pixel-symbol-example:after {
-	display:inline-block;
-	position:relative;
-	top:-0.9em;
-	width:0.0625em;
-	height:0.0625em;
-	color:currentcolor;
-	content:"";
-	box-shadow: 0.375em 0.0625em currentcolor, 0.4375em 0.0625em currentcolor, 0.5em 0.0625em currentcolor, 0.5625em 0.0625em currentcolor, 0.625em 0.0625em currentcolor, 0.25em 0.125em currentcolor, 0.3125em 0.125em currentcolor, 0.6875em 0.125em currentcolor, 0.75em 0.125em currentcolor, 0.1875em 0.1875em currentcolor, 0.8125em 0.1875em currentcolor, 0.125em 0.25em currentcolor, 0.875em 0.25em currentcolor, 0.0625em 0.3125em currentcolor, 0.625em 0.3125em currentcolor, 0.75em 0.3125em currentcolor, 0.875em 0.3125em currentcolor, 0.0em 0.375em currentcolor, 0.1875em 0.375em currentcolor, 0.25em 0.375em currentcolor, 0.3125em 0.375em currentcolor, 0.625em 0.375em currentcolor, 0.75em 0.375em currentcolor, 0.9375em 0.375em currentcolor, 0.0em 0.4375em currentcolor, 0.1875em 0.4375em currentcolor, 0.375em 0.4375em currentcolor, 0.625em 0.4375em currentcolor, 0.75em 0.4375em currentcolor, 0.9375em 0.4375em currentcolor, 0.0625em 0.5em currentcolor, 0.1875em 0.5em currentcolor, 0.9375em 0.5em currentcolor, 0.0em 0.5625em currentcolor, 0.25em 0.5625em currentcolor, 0.5625em 0.5625em currentcolor, 0.6875em 0.5625em currentcolor, 0.8125em 0.5625em currentcolor, 0.9375em 0.5625em currentcolor, 0.0em 0.625em currentcolor, 0.5625em 0.625em currentcolor, 0.625em 0.625em currentcolor, 0.6875em 0.625em currentcolor, 0.75em 0.625em currentcolor, 0.8125em 0.625em currentcolor, 0.9375em 0.625em currentcolor, 0.0em 0.6875em currentcolor, 0.5625em 0.6875em currentcolor, 0.625em 0.6875em currentcolor, 0.6875em 0.6875em currentcolor, 0.75em 0.6875em currentcolor, 0.8125em 0.6875em currentcolor, 0.9375em 0.6875em currentcolor, 0.0em 0.75em currentcolor, 0.5em 0.75em currentcolor, 0.5625em 0.75em currentcolor, 0.625em 0.75em currentcolor, 0.6875em 0.75em currentcolor, 0.75em 0.75em currentcolor, 0.875em 0.75em currentcolor, 0.0625em 0.8125em currentcolor, 0.5em 0.8125em currentcolor, 0.625em 0.8125em currentcolor, 0.75em 0.8125em currentcolor, 0.875em 0.8125em currentcolor, 0.125em 0.875em currentcolor, 0.8125em 0.875em currentcolor, 0.1875em 0.9375em currentcolor, 0.25em 0.9375em currentcolor, 0.6875em 0.9375em currentcolor, 0.75em 0.9375em currentcolor, 0.3125em 1.0em currentcolor, 0.375em 1.0em currentcolor, 0.4375em 1.0em currentcolor, 0.5em 1.0em currentcolor, 0.5625em 1.0em currentcolor, 0.625em 1.0em currentcolor;
+    display: inline-block;
+    position: relative;
+    top: -0.9em;
+    width: 0.0625em;
+    height: 0.0625em;
+    color: currentcolor;
+    content: "";
+    box-shadow: 0.375em 0.0625em currentcolor, 0.4375em 0.0625em currentcolor, 0.5em 0.0625em currentcolor, 0.5625em 0.0625em currentcolor, 0.625em 0.0625em currentcolor, 0.25em 0.125em currentcolor, 0.3125em 0.125em currentcolor, 0.6875em 0.125em currentcolor, 0.75em 0.125em currentcolor, 0.1875em 0.1875em currentcolor, 0.8125em 0.1875em currentcolor, 0.125em 0.25em currentcolor, 0.875em 0.25em currentcolor, 0.0625em 0.3125em currentcolor, 0.625em 0.3125em currentcolor, 0.75em 0.3125em currentcolor, 0.875em 0.3125em currentcolor, 0.0em 0.375em currentcolor, 0.1875em 0.375em currentcolor, 0.25em 0.375em currentcolor, 0.3125em 0.375em currentcolor, 0.625em 0.375em currentcolor, 0.75em 0.375em currentcolor, 0.9375em 0.375em currentcolor, 0.0em 0.4375em currentcolor, 0.1875em 0.4375em currentcolor, 0.375em 0.4375em currentcolor, 0.625em 0.4375em currentcolor, 0.75em 0.4375em currentcolor, 0.9375em 0.4375em currentcolor, 0.0625em 0.5em currentcolor, 0.1875em 0.5em currentcolor, 0.9375em 0.5em currentcolor, 0.0em 0.5625em currentcolor, 0.25em 0.5625em currentcolor, 0.5625em 0.5625em currentcolor, 0.6875em 0.5625em currentcolor, 0.8125em 0.5625em currentcolor, 0.9375em 0.5625em currentcolor, 0.0em 0.625em currentcolor, 0.5625em 0.625em currentcolor, 0.625em 0.625em currentcolor, 0.6875em 0.625em currentcolor, 0.75em 0.625em currentcolor, 0.8125em 0.625em currentcolor, 0.9375em 0.625em currentcolor, 0.0em 0.6875em currentcolor, 0.5625em 0.6875em currentcolor, 0.625em 0.6875em currentcolor, 0.6875em 0.6875em currentcolor, 0.75em 0.6875em currentcolor, 0.8125em 0.6875em currentcolor, 0.9375em 0.6875em currentcolor, 0.0em 0.75em currentcolor, 0.5em 0.75em currentcolor, 0.5625em 0.75em currentcolor, 0.625em 0.75em currentcolor, 0.6875em 0.75em currentcolor, 0.75em 0.75em currentcolor, 0.875em 0.75em currentcolor, 0.0625em 0.8125em currentcolor, 0.5em 0.8125em currentcolor, 0.625em 0.8125em currentcolor, 0.75em 0.8125em currentcolor, 0.875em 0.8125em currentcolor, 0.125em 0.875em currentcolor, 0.8125em 0.875em currentcolor, 0.1875em 0.9375em currentcolor, 0.25em 0.9375em currentcolor, 0.6875em 0.9375em currentcolor, 0.75em 0.9375em currentcolor, 0.3125em 1.0em currentcolor, 0.375em 1.0em currentcolor, 0.4375em 1.0em currentcolor, 0.5em 1.0em currentcolor, 0.5625em 1.0em currentcolor, 0.625em 1.0em currentcolor;
 }
 
 .css-pixel-symbol.css-pixel-symbol-mushroom:after {
