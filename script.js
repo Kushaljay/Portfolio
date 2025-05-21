@@ -868,26 +868,38 @@ const data = {
     `
 };
 
-const buttons = document.querySelectorAll('.tab-button');
-const contentArea = document.getElementById('contentArea');
+document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.tab-button');
+    const contentArea = document.getElementById('contentArea');
 
-function updateContent(tab) {
-    contentArea.classList.add('fade-out');
+    function updateContent(tab) {
+        if (!contentArea) {
+            console.error("Element with id 'contentArea' not found.");
+            return;
+        }
 
-    setTimeout(() => {
-        contentArea.innerHTML = data[tab];
-        contentArea.classList.remove('fade-out');
-    }, 300);
+        contentArea.classList.add('fade-out');
 
-    buttons.forEach(btn => btn.classList.remove('active'));
-    document.querySelector(`[data-tab="${tab}"]`).classList.add('active');
-}
+        setTimeout(() => {
+            contentArea.innerHTML = data[tab];
+            contentArea.classList.remove('fade-out');
+        }, 300);
 
-buttons.forEach(button => {
-    button.addEventListener('click', () => {
-        updateContent(button.dataset.tab);
+        buttons.forEach(btn => btn.classList.remove('active'));
+        const activeTab = document.querySelector(`[data-tab="${tab}"]`);
+        if (activeTab) {
+            activeTab.classList.add('active');
+        } else {
+            console.warn(`Tab button with data-tab="${tab}" not found.`);
+        }
+    }
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            updateContent(button.dataset.tab);
+        });
     });
-});
 
-// Initialize with "web" content
-updateContent('web');
+    // Initialize with "web" content
+    updateContent('web');
+});
