@@ -1,0 +1,536 @@
+* {
+    z-index: 1;
+    font-family: "Geist", sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-weight: 900;
+    background-color: rgb(11, 11, 11);
+    margin: 0;
+    padding: 0;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+
+.intro {
+    padding-bottom: 1rem;
+    padding-top: 3rem;
+}
+
+.nav{
+    margin:auto;
+    padding-top:1rem;
+}
+.navbar {
+    z-index: 1;
+    position: relative;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    justify-content: space-between;
+
+}
+
+.navlist {
+    list-style: none;
+    align-items: center;
+}
+
+.nava {
+    align-items: center;
+    text-decoration: none;
+    color: rgb(221, 221, 221);
+    transition: 0.3s;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.nava:hover {
+    color: #c1c1c1;
+
+}
+.logoa {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3rem;
+    color: white;
+    transition: 0.3s;
+}
+.logoa:hover {
+    color: rgb(201, 201, 201);
+}
+.CV {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 0.5em;
+    transition: 0.3s;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.CV:hover {
+    background-color: rgb(173, 173, 173);
+}
+
+.navbar .nav ul {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.CV {
+    display: block;
+    margin-left: 0;
+    margin-right: 1rem;
+}
+
+.header {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.wordcontainer {
+    padding-left: 10%;
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+}
+
+.wordsdiff {
+    z-index: 1;
+    position: relative;
+    font-family: "Geist", sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #427aa1;
+    text-decoration-thickness: 0.6rem;
+}
+
+.words {
+    z-index: 1;
+    position: relative;
+    font-family: "Geist", sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #064789;
+    text-decoration-thickness: 0.6rem;
+
+}
+
+.wordsmall {
+
+    z-index: 1;
+    position: relative;
+    font-size: 1.3rem;
+    font-weight:600;
+    color: rgb(255, 255, 255);
+    padding: 0.5rem;
+}
+
+.wordsmall:hover {
+    color: rgb(131, 131, 131);
+}
+
+.smallworddiv {
+    padding-top: 2rem;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 700px) {
+    .wordsmall {
+        font-size: 1rem;
+    }
+}
+
+.smallworddiv:hover {
+    transform: translateX(0.5rem);
+
+}
+
+.biocontainermain {
+    background-color: rgb(19, 23, 30);
+    margin-top:4rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 2rem 0 2rem 2rem;
+    border-radius: 1rem;
+    box-shadow: inset 0 0 2px #b6b6b6;
+    transition: all 0.7s ease-in-out;
+
+}
+
+.biotitle {
+    font-family: "Geist", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2rem;
+    color: white;
+}
+
+.bio {
+    font-family: "Geist", sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    font-style: normal;
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+    .bio {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #hide {
+        display: none;
+    }
+}
+@media only screen and (max-width: 950px) {
+    #hideport {
+        display: none;
+    }
+}
+
+.biotextcontainer {
+    width: 95%;
+}
+
+canvas {
+    text-align: center;
+    overflow: hidden;
+    border-radius: 5rem;
+    position: absolute;
+    display: block;
+    z-index: 0;
+}
+
+.realcanvas {
+    z-index: 0;
+}
+
+
+.porttitle {
+    margin:auto;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.porttitle p {
+    color: rgb(255, 255, 255);
+    font-size: 6rem;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: #4ea6ff;
+    text-decoration-thickness: 0.6rem;
+}
+
+@media screen and (max-width: 900px) {
+    .porttitle p {
+        font-size: 4.5rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .porttitle p {
+        font-size: 3.5rem;
+    }
+}
+
+.portgalcontainer {
+    columns: 1;
+    column-gap: 1rem;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    
+
+    .p {
+        background-color: rgb(14, 14, 14);
+        margin: 0 1rem 1rem 0;
+        display: inline-block;
+        width: 100%;
+        box-shadow: inset 0 0 1px #818181;
+        border-radius: 1rem;
+        transition: 0.3s all;
+    }
+
+    .ptitle {
+        font-family: "Geist", sans-serif;
+        color: white;
+        font-size: 1.5rem;
+        padding: 2rem 2rem 2rem 2rem;
+        font-weight: 600;
+
+    }
+
+    .descripton p {
+        font-family: "Geist", sans-serif;
+        padding: 2rem 2rem 2rem 2rem;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    ul {
+        display: flex;
+        position: relative;
+        justify-content: flex-start;
+        color: white;
+        list-style: none;
+        font-weight: 300;
+        font-size: 1rem;
+        color: white;
+        flex-wrap: wrap;
+        padding: 0 0 2rem 2rem;
+    }
+
+    li {
+        box-shadow: inset 0 0 2px #b9b9b9;
+        font-family: "Geist Mono", monospace;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+        margin: 0.3rem;
+        border-radius: 0.2rem;
+    }
+
+    p {
+        font-family: "Geist Mono", monospace;
+        color: white;
+        font-weight: 300;
+        font-size: 2rem;
+        padding-left: 1rem;
+
+    }
+}
+
+.portimg {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    padding-left: 8rem;
+
+}
+
+.container {
+    display: flex;
+    padding: 3rem 8rem 0 8rem;
+}
+@media screen and (max-width: 900px) {
+    .container {
+        padding: 3rem 2rem 0 2rem;
+    }
+}
+.left {
+    transition: opacity 0.5s ease;
+    opacity: 1;
+    width: 100%;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.projnav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem auto;
+    flex-wrap: wrap;
+}
+
+.navoutline {
+    border-radius: 1rem;
+    padding: 0.5rem;
+    box-shadow: inset 0 0 1px #fdfdfd;
+
+}
+
+.tab-button {
+    font-weight: 500;
+    background: rgb(11, 11, 11);
+    border-radius: 1rem;
+    padding: 0.8rem 1.5rem;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    border-style: none;
+}
+@media only screen and (max-width: 600px) {
+    .tab-button {
+        font-size: 1.2rem;
+    }
+}
+.tab-button:hover {
+    color: rgb(203, 203, 203);
+}
+
+.tab-button.active {
+    background: rgb(200, 222, 255);
+    color: rgb(11, 11, 11);
+}
+
+.projecttable {
+    width: 100%;
+}
+
+.projecttxt {
+    vertical-align: top;
+    width: 50%;
+    left: 0px;
+}
+
+.projectimg {
+    width: 50%;
+    right: 0px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    border-radius: 1rem;
+    margin-top: 3rem;
+}
+
+.aboutimage {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.projectimgcontainer {
+    padding: 0 3rem 3rem 3rem;
+}
+
+.ccode {
+    padding: 0 0 0 2rem;
+}
+
+.codebutton {
+    font-weight: 500;
+    background-color: rgb(168, 184, 215);
+    color: black;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    transition: 0.3s;
+}
+
+.codebutton:hover {
+    background-color: rgb(111, 133, 156);
+}
+
+.placeholder {
+    background-color: white;
+    height: 300px;
+    border-radius: 1rem;
+}
+
+.footer {
+    padding:1rem;
+    width: 100%;
+    background-color: black;
+    font-family: "Geist", sans-serif;
+    font-style: normal;
+    color: white;
+
+}
+
+.footertable {
+    padding:1rem;
+    border: none;
+}
+
+.footertable li {
+    list-style: none;
+    color: white;
+    font-weight: 200;
+    padding-bottom:0.5rem;
+    padding-right:1rem;
+}
+
+.footerregtxt {
+    color: rgb(185, 185, 185);
+    font-weight: 100;
+
+}
+
+.footertable a {
+    color: rgb(185, 185, 185);
+    font-weight: 100;
+}
+
+.footertable a:hover {
+    color: rgb(162, 162, 162);
+    transition: 0.2s;
+}
+
+.footertitle {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.css-pixel-symbol {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    text-align: left;
+}
+
+
+.css-pixel-symbol {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	text-align:left;
+}
+
+.css-pixel-symbol.css-pixel-symbol-example:after {
+	display:inline-block;
+	position:relative;
+	top:-0.9em;
+	width:0.0625em;
+	height:0.0625em;
+	color:currentcolor;
+	content:"";
+	box-shadow: 0.375em 0.0625em currentcolor, 0.4375em 0.0625em currentcolor, 0.5em 0.0625em currentcolor, 0.5625em 0.0625em currentcolor, 0.625em 0.0625em currentcolor, 0.25em 0.125em currentcolor, 0.3125em 0.125em currentcolor, 0.6875em 0.125em currentcolor, 0.75em 0.125em currentcolor, 0.1875em 0.1875em currentcolor, 0.8125em 0.1875em currentcolor, 0.125em 0.25em currentcolor, 0.875em 0.25em currentcolor, 0.0625em 0.3125em currentcolor, 0.625em 0.3125em currentcolor, 0.75em 0.3125em currentcolor, 0.875em 0.3125em currentcolor, 0.0em 0.375em currentcolor, 0.1875em 0.375em currentcolor, 0.25em 0.375em currentcolor, 0.3125em 0.375em currentcolor, 0.625em 0.375em currentcolor, 0.75em 0.375em currentcolor, 0.9375em 0.375em currentcolor, 0.0em 0.4375em currentcolor, 0.1875em 0.4375em currentcolor, 0.375em 0.4375em currentcolor, 0.625em 0.4375em currentcolor, 0.75em 0.4375em currentcolor, 0.9375em 0.4375em currentcolor, 0.0625em 0.5em currentcolor, 0.1875em 0.5em currentcolor, 0.9375em 0.5em currentcolor, 0.0em 0.5625em currentcolor, 0.25em 0.5625em currentcolor, 0.5625em 0.5625em currentcolor, 0.6875em 0.5625em currentcolor, 0.8125em 0.5625em currentcolor, 0.9375em 0.5625em currentcolor, 0.0em 0.625em currentcolor, 0.5625em 0.625em currentcolor, 0.625em 0.625em currentcolor, 0.6875em 0.625em currentcolor, 0.75em 0.625em currentcolor, 0.8125em 0.625em currentcolor, 0.9375em 0.625em currentcolor, 0.0em 0.6875em currentcolor, 0.5625em 0.6875em currentcolor, 0.625em 0.6875em currentcolor, 0.6875em 0.6875em currentcolor, 0.75em 0.6875em currentcolor, 0.8125em 0.6875em currentcolor, 0.9375em 0.6875em currentcolor, 0.0em 0.75em currentcolor, 0.5em 0.75em currentcolor, 0.5625em 0.75em currentcolor, 0.625em 0.75em currentcolor, 0.6875em 0.75em currentcolor, 0.75em 0.75em currentcolor, 0.875em 0.75em currentcolor, 0.0625em 0.8125em currentcolor, 0.5em 0.8125em currentcolor, 0.625em 0.8125em currentcolor, 0.75em 0.8125em currentcolor, 0.875em 0.8125em currentcolor, 0.125em 0.875em currentcolor, 0.8125em 0.875em currentcolor, 0.1875em 0.9375em currentcolor, 0.25em 0.9375em currentcolor, 0.6875em 0.9375em currentcolor, 0.75em 0.9375em currentcolor, 0.3125em 1.0em currentcolor, 0.375em 1.0em currentcolor, 0.4375em 1.0em currentcolor, 0.5em 1.0em currentcolor, 0.5625em 1.0em currentcolor, 0.625em 1.0em currentcolor;
+}
+
+.css-pixel-symbol.css-pixel-symbol-mushroom:after {
+    display: inline-block;
+    position: relative;
+    top: -0.9em;
+    width: 0.0625em;
+    height: 0.0625em;
+    color: currentcolor;
+    content: "";
+    box-shadow: 0.3125em 0.0625em currentcolor, 0.375em 0.0625em currentcolor, 0.4375em 0.0625em currentcolor, 0.5em 0.0625em currentcolor, 0.5625em 0.0625em currentcolor, 0.625em 0.0625em currentcolor, 0.1875em 0.125em currentcolor, 0.25em 0.125em currentcolor, 0.4375em 0.125em currentcolor, 0.5em 0.125em currentcolor, 0.5625em 0.125em currentcolor, 0.625em 0.125em currentcolor, 0.6875em 0.125em currentcolor, 0.75em 0.125em currentcolor, 0.125em 0.1875em currentcolor, 0.4375em 0.1875em currentcolor, 0.5em 0.1875em currentcolor, 0.5625em 0.1875em currentcolor, 0.625em 0.1875em currentcolor, 0.8125em 0.1875em currentcolor, 0.0625em 0.25em currentcolor, 0.375em 0.25em currentcolor, 0.4375em 0.25em currentcolor, 0.5em 0.25em currentcolor, 0.5625em 0.25em currentcolor, 0.625em 0.25em currentcolor, 0.6875em 0.25em currentcolor, 0.875em 0.25em currentcolor, 0.0625em 0.3125em currentcolor, 0.3125em 0.3125em currentcolor, 0.375em 0.3125em currentcolor, 0.6875em 0.3125em currentcolor, 0.75em 0.3125em currentcolor, 0.875em 0.3125em currentcolor, 0.0em 0.375em currentcolor, 0.0625em 0.375em currentcolor, 0.125em 0.375em currentcolor, 0.1875em 0.375em currentcolor, 0.25em 0.375em currentcolor, 0.3125em 0.375em currentcolor, 0.75em 0.375em currentcolor, 0.8125em 0.375em currentcolor, 0.875em 0.375em currentcolor, 0.9375em 0.375em currentcolor, 0.0em 0.4375em currentcolor, 0.0625em 0.4375em currentcolor, 0.25em 0.4375em currentcolor, 0.3125em 0.4375em currentcolor, 0.75em 0.4375em currentcolor, 0.8125em 0.4375em currentcolor, 0.875em 0.4375em currentcolor, 0.9375em 0.4375em currentcolor, 0.0em 0.5em currentcolor, 0.3125em 0.5em currentcolor, 0.75em 0.5em currentcolor, 0.8125em 0.5em currentcolor, 0.9375em 0.5em currentcolor, 0.0em 0.5625em currentcolor, 0.3125em 0.5625em currentcolor, 0.375em 0.5625em currentcolor, 0.6875em 0.5625em currentcolor, 0.75em 0.5625em currentcolor, 0.9375em 0.5625em currentcolor, 0.0em 0.625em currentcolor, 0.0625em 0.625em currentcolor, 0.25em 0.625em currentcolor, 0.3125em 0.625em currentcolor, 0.375em 0.625em currentcolor, 0.4375em 0.625em currentcolor, 0.5em 0.625em currentcolor, 0.5625em 0.625em currentcolor, 0.625em 0.625em currentcolor, 0.6875em 0.625em currentcolor, 0.75em 0.625em currentcolor, 0.9375em 0.625em currentcolor, 0.0em 0.6875em currentcolor, 0.0625em 0.6875em currentcolor, 0.125em 0.6875em currentcolor, 0.1875em 0.6875em currentcolor, 0.25em 0.6875em currentcolor, 0.3125em 0.6875em currentcolor, 0.375em 0.6875em currentcolor, 0.4375em 0.6875em currentcolor, 0.5em 0.6875em currentcolor, 0.5625em 0.6875em currentcolor, 0.625em 0.6875em currentcolor, 0.6875em 0.6875em currentcolor, 0.75em 0.6875em currentcolor, 0.8125em 0.6875em currentcolor, 0.9375em 0.6875em currentcolor, 0.0625em 0.75em currentcolor, 0.125em 0.75em currentcolor, 0.1875em 0.75em currentcolor, 0.375em 0.75em currentcolor, 0.5625em 0.75em currentcolor, 0.75em 0.75em currentcolor, 0.8125em 0.75em currentcolor, 0.875em 0.75em currentcolor, 0.125em 0.8125em currentcolor, 0.375em 0.8125em currentcolor, 0.5625em 0.8125em currentcolor, 0.8125em 0.8125em currentcolor, 0.125em 0.875em currentcolor, 0.8125em 0.875em currentcolor, 0.1875em 0.9375em currentcolor, 0.75em 0.9375em currentcolor, 0.25em 1.0em currentcolor, 0.3125em 1.0em currentcolor, 0.375em 1.0em currentcolor, 0.4375em 1.0em currentcolor, 0.5em 1.0em currentcolor, 0.5625em 1.0em currentcolor, 0.625em 1.0em currentcolor, 0.6875em 1.0em currentcolor;
+}

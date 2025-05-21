@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kushal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oranienbaum&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Oranienbaum&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="big">
+        <div class="navbar" id="navmain">
+            <div class="nav">
+                <ul>
+                    <li class="navlist"><a href="index.html" class="nava"><a href="#" class="logoa" id="shell"><span
+                                    class="css-pixel-symbol css-pixel-symbol-example"></span></a></a></li>
+                    <li class="navlist"><a href="#section1" class="nava">Portfolio:</a></li>
+                    <li class="navlist"><a href="#section2" class="nava">Contact:</a></li>
+                    <li class="navlist"><a href="KushalResume.pdf" download class="CV" target="_blank">Download CV</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <canvas id="thesimulation" class="realcanvas"></canvas>
+        </div>
+        <div class="header">
+
+
+            <div class="wordcontainer">
+                <text class="words">Kushal's</text>
+                <br>
+                <text class="wordsdiff">Project Portfolio.</text>
+
+                <!--<div class="smallworddiv">
+                    <text class="wordsmall">DRAG</text>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="intro">
+        <div class="biocontainermain">
+            <div class="biotitlecontainer">
+                <txt class="biotitle">About <span class="css-pixel-symbol css-pixel-symbol-mushroom"></span> :</txt>
+            </div>
+            <br>
+            <div class="biotextcontainer">
+                <table>
+                    <tr>
+                        <td style="vertical-align: top;padding-right:1rem;">
+                            <txt class="bio">I’m Kushal, an <b>Electrical Engineering & Honours Physics</b> student at
+                                the
+                                University of Ottawa with a passion for optics, hardware, & robotics. <br><br>My
+                                research focuses on
+                                integrated photonics, optical simulation, & device design at the Joint Max-Planck
+                                Institute for
+                                Extreme & Quantum Photonics. <br><br><br>If it has lasers or circuits, I'm interested.
+                            </txt>
+                        </td>
+
+                        <td>
+                            <div id="hide">
+                                <img class="aboutimage" src="Images/portfolio/DFB.png">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+    <div class="portfolio">
+        <div class="porttitle">
+            <p id="section1">Project Portfolio</p>
+        </div>
+
+        <div class="projnav">
+            <div class="navoutline">
+                <button class="tab-button" data-tab="physics">Physics</button>
+                <button class="tab-button" data-tab="ee">Engineering</button>
+                <button class="tab-button" data-tab="fin">Finance</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="left" id="contentArea">
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="section2">
+        <div class="footerlinkscontainer">
+            <table class="footertable">
+                <tr>
+                    <td>
+                        <ul>
+                            <div class="footertitle">
+                                <li>Contact</li>
+                            </div>
+                            <li><a href="mailto:kushal.jay21@gmail.com" target="blank">Email</a></li>
+                            <li><a href="https://www.linkedin.com/in/kushaljay" target="blank">LinkedIn</a></li>
+                            <li><a href="https://www.instagram.com/kushal.jay21/" target="blank">IG</a></li>
+                            <li><a href="https://strava.app.link/khthSkpoqTb" target="blank">Strava</a></li>
+                        </ul>
+
+                    </td>
+                    <td>
+                        <ul>
+                            <div class="footertitle">
+                                <li>Unmentioned Skills</li>
+                            </div>
+                            <li>
+                                <div class="footerregtxt">Professional Liverpool Fan</div>
+                            </li>
+                            <li>
+                                <div class="footerregtxt">Sleep schedule exists in the complex plane</div>
+                            </li>
+                            <li>
+                                <div class="footerregtxt">Omlettes</div>
+                            </li>
+                            <li>
+                                <div class="footerregtxt">Highly proficient in IKEA furniture assembly</div>
+                            </li>
+                        </ul>
+
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
