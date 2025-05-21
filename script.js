@@ -594,6 +594,7 @@ window.requestAnimationFrame = window.requestAnimationFrame || window.webkitRequ
 //And this line calls the init() function defined above to start the script.
 window.addEventListener("DOMContentLoaded", () => {
     Fluid.initialize();
+    updateContent();
 });
 
 
